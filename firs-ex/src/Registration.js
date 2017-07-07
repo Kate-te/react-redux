@@ -29,7 +29,7 @@ class Registration extends Component {
         placeholder='Email'
         value={this.state.email}
         onChange={this.handleEmailChange}/>
-        <button>Submit</button>
+        <button>Submit</button> 
       </form>
     );
   }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './App.css';
+
 
 class Header extends Component {
 // validation react props (type)
@@ -16,11 +18,12 @@ class Header extends Component {
 //   })
 // )
 //     };
+
   render() {
     return (
       <div>
         {this.props.items.map((item, index) => 
-          <a href={item.link} key ={index}>{item.label}</a>
+          <a href={item.link} className='link' key ={index}>{item.label} </a>
         )}
       </div>
     );

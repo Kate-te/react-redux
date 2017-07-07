@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import './Dropdown.css';
+import './App.css';
 
 class Dropdown extends Component {
   constructor(props){
@@ -18,8 +18,8 @@ toggleState(){
         drop = <div> it is your hidden div</div>
     }
     return (
-      <div onClick={this.toggleState.bind(this)}>
-     menu??
+      <div onClick={this.toggleState.bind(this)} className="drop" >
+     some drop, kids?
       {drop}
       </div>
     );
